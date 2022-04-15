@@ -1,0 +1,139 @@
+    /**** R E S E T  start****/
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+all: unset;
+display: revert;
+}
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+a, button {
+cursor: revert;
+}
+ol, ul, menu {
+list-style: none;
+}
+img {
+max-width: 100%;
+}
+table {
+border-collapse: collapse;
+}
+textarea {
+white-space: revert;
+}
+meter {
+-webkit-appearance: revert;
+appearance: revert;
+}
+::placeholder {
+color: unset;
+}
+:where([hidden]) {
+display: none;
+}
+:where([contenteditable]) {
+-moz-user-modify: read-write;
+-webkit-user-modify: read-write;
+overflow-wrap: break-word;
+-webkit-line-break: after-white-space;
+}
+:where([draggable=
+true
+]) {
+-webkit-user-drag: element;
+}
+    /**** R E S E T  end****/
+
+    /**
+    Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+    Dark gray: hsl(0, 0%, 59%)
+
+    font-family: 'Kumbh Sans', sans-serif;
+    **/
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../images/bg-pattern-bottom.svg);
+    background-size: contain;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.container{
+    width: 20.3125rem;
+
+}
+.card-header{
+    background-image: url(../images/bg-pattern-card.svg);
+    width: 100%;
+    height: min(140px);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    position: relative;
+}
+img{
+    border: 0.3rem solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+  left: 0;
+  right: 0;
+    top: 60%;
+    z-index: 9999;
+}
+ul{
+    display: flex;
+}
+.card-body{
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding-top: 4.5rem;
+}
+.name-age{
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.1rem;
+    color: hsl(229, 23%, 23%);
+} 
+.city{
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+span{
+    margin-left: 0.3rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+ul{
+    box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+.numbers{
+    font-weight: 700;
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(229, 23%, 23%);
+    margin-bottom: 0.2rem;
+}
+.count{
+    color: hsl(0, 0%, 59%);
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+}
+
+
